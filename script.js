@@ -1,6 +1,8 @@
 const container = document.getElementById("container");
+
+
 let size = prompt("Enter you size");
- 
+
 
 for(let i = 0; i < size; i++){
 	for(let j = 0; j < size; j++) {
@@ -12,6 +14,8 @@ for(let i = 0; i < size; i++){
 }
 
 
+
+
 const sq = document.querySelectorAll(".square");
 
 sq.forEach(function(square) {
@@ -21,4 +25,5 @@ sq.forEach(function(square) {
 		};
 	});
   });
+
   
