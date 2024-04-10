@@ -1,13 +1,24 @@
-var div = document.createElement("div");
-div.innerText = ".";
 const container = document.getElementById("container");
+let size = prompt("Enter you size");
+ 
 
-for(let i = 0; i < 16; i++){
-	for(let j = 0; j < 16; j++) {
-	var div = document.createElement("div");
-	div.classList.add("square");
-	container.appendChild(div);
+for(let i = 0; i < size; i++){
+	for(let j = 0; j < size; j++) {
+	let square = document.createElement("div");
+	square.classList.add("square");
 
-console.log(i);
+	container.appendChild(square);
 	}
 }
+
+
+const sq = document.querySelectorAll(".square");
+
+sq.forEach(function(square) {
+	square.addEventListener('mousemove', function(event) {
+		if (event.buttons === 1) {
+			square.classList.add("black");
+		};
+	});
+  });
+  

@@ -1,31 +1,40 @@
-*{
+/* *{
 	margin: 0;
 padding: 0;
-}
+} */
 body{
 	display: flex;
 	justify-content: center;
-	margin-top: 15%;
+	gap: 0;
+	/*margin-top: 15%;*/
 }
 
 #container{
 	display: flex;
 	flex-wrap: wrap;
-	width: 190px;
-	height: 190px;
-	margin: 0 0;
+	flex-direction: row;
+  	align-content: flex-start;
+	width: 960px;
+	height: 960px;
+	margin: 0;
 	padding: 0;
-	border: 1px solid red;
+	gap: 0;
+	/*border: 1px solid red;*/
 	}
 
 .square {
 	width: 9.5px;
 	height: 9.5px;
-	border: 0.1px solid #7e7e7e;
-	margin: 0 0;
+	border: 0.1px solid #7e7e7e; 
+	margin: 0;
 	padding: 0;
+	gap: 0;
 	}
 	
 .square:hover{
 	background-color: black;
 }	
+
+.black {
+	background-color: black;
+}
